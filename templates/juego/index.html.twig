@@ -1,0 +1,16 @@
+{# templates/juego/index.html.twig #}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>juego</title>
+</head>
+<body>
+    <h1>{{ juego.getNombre() }}</h1>
+    <ul>
+        {% for plataforma in juego.getplataforma() %}
+            <li>{{ plataforma }}</li>
+        {% endfor %}
+    </ul>
+    <p>Precio: ${{ juego.getPrecio() }}</p>
+</body>
+</html>
